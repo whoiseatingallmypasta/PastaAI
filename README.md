@@ -32,7 +32,7 @@ Each function will have variables that are "tunable" and we will potentially twe
 the values of each of these variables to "tune" the AI
 
 (Potentially we can run a number of these in parallel and have them "fight" eachother,
-and do a genetic protocol to decide the better tuning parameters)
+ to decide the better tuning parameters)
 
 	#List of Hueristic Scores to code:
 	
