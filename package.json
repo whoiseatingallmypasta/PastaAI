@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/whoiseatingallmypasta/PastaAI#readme",
   "dependencies": {
-    "5d-chess-js": "^0.3.3"
+    "5d-chess-js": "^0.3.4"
   }
 }
