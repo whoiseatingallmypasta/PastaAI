@@ -34,25 +34,25 @@ the values of each of these variables to "tune" the AI
 
 * List of heuristic Scores to code:
 
-** "total move difference"
+	* "total move difference"
 
-** score for knights 2 away from king
+	* score for knights 2 away from king
 
-** knights 1 away from king
+	* knights 1 away from king
 
-** bishops on an open diagonal
+	* bishops on an open diagonal
 
-** enemy has an exposed triagonal to king 
+	* enemy has an exposed triagonal to king 
 	
-	#(multiplier for how many turns this is true)
+		*(multiplier for how many turns this is true)
 	
-	#(boolean on if a queen is available)
+		*(boolean on if a queen is available)
 	
-#6 exposed 2D time diagonal to king
+	* exposed 2D time diagonal to king
 
-	#multiplier on number of turns
+		*multiplier on number of turns
 	
-	#multiplier on number of bishops and queens
+		*multiplier on number of bishops and queens
 		
 # Big idea #2: "Hand tuning of what board states are considered"
 
