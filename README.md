@@ -1,5 +1,5 @@
 # PastaAI
-An AI for open-source 5D chess game..
+An AI for open-source 5D chess game.
 
 
 # Current Build Summary
