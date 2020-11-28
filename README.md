@@ -32,7 +32,7 @@ the values of each of these variables to "tune" the AI
 (Potentially we can run a number of these in parallel and have them "fight" eachother,
  to decide the better tuning parameters)
 
-List of scores to code:
+Example list of interesting scoring methods:
 
 * "total move difference"  - finished!
 
