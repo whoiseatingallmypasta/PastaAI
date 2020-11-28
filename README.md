@@ -22,7 +22,8 @@ that finds is based on the "difference in total number of moves of white vs blac
 * Need to reduce the number of moves that are considered, particularly for combinatoric board states
 
 
-# Big idea #1: "Variable heuristic Scores"
+#1 Algorithmic Ideas 
+#2 "Implement many different scoring systems"
 
 We will add a number of different functions that assign a score to the board state
 Each function will have variables that are "tunable" and we will potentially tweak
