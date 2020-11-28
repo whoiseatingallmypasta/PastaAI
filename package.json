@@ -1,0 +1,22 @@
+{
+  "name": "pastaai",
+  "version": "1.0.0",
+  "description": "An AI for open-source 5D chess game.",
+  "main": "src/minmaxdraft.js",
+  "scripts": {
+    "bench": "node ./src/bench.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whoiseatingallmypasta/PastaAI.git"
+  },
+  "author": "whoiseatingallmypasta",
+  "bugs": {
+    "url": "https://github.com/whoiseatingallmypasta/PastaAI/issues"
+  },
+  "homepage": "https://github.com/whoiseatingallmypasta/PastaAI#readme",
+  "dependencies": {
+    "5d-chess-js": "^0.3.4"
+  }
+}
