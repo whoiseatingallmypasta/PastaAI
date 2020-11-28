@@ -83,13 +83,11 @@ we can come up with a rule-of-thumb for what moves are worth considering. Some e
 
 Not only can the scoring systems have tunable parameters, but the actual AI's consideration of board states can also be tunable.
 	
-	Some more examples of adjustable parameters:
+Some more examples of adjustable parameters:
 	
-	*  "which pieces are considered at"
-	
-	*  "how far away pawns are from king for the move be ignored"
-	
-	*  how good of a score a board must look for time travel to be ignored
-	
-	*  at certain depths should certain attributes be ignored
+*  "how far away pawns are from king for the move be ignored"
+
+*  how good of a score a board must look for time travel to be ignored
+
+*  at certain depths should certain attributes be ignored
 
