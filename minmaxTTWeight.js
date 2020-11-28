@@ -75,7 +75,8 @@ for (i = 0; i < movesPlayerTurn1.length; i++) { //loop through players moves
 				continue
 			}
 
-			var boardPlayerTurn3 = new Chess(boardOpponentTurn2.export());
+			//var boardPlayerTurn3 = new Chess(boardOpponentTurn2.export());
+			var boardPlayerTurn3 = boardOpponentTurn2.copy();
 			
 			boardPlayerTurn3.move(jthMove);
 			
