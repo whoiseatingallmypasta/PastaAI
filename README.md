@@ -44,59 +44,56 @@ Example list of interesting scoring methods:
 
 * enemy has an exposed triagonal to king 
 
-	*(multiplier for how many turns this is true)
+	* multiplier for how many turns this is true
 
-	*(boolean on if a queen is available)
+	* boolean on if a queen is available
 
 * exposed 2D time diagonal to king
 
-	*multiplier on number of turns
+	* multiplier on number of turns
 
-	*multiplier on number of bishops and queens
+	* multiplier on number of bishops and queens
 		
-# Big idea #2: "Hand tuning of what board states are considered"
+## 2. "Hand tuning of what board states are considered"
 
 Many move combinations are not interesting. And while technically generating an exaustive list of all the move possiblities is hard,
-we can come up with a heuristic for what moves will be considered. Some examples:
+we can come up with a rule-of-thumb for what moves are worth considering. Some examples:
 
-	#Ignoring combinatoric time travel moves 
-	
-		while sometimes doing 2 time travel moves in a row is good - most of the time it isnt interesting	
-		
-		so all combinatoric moves can be ignored for now
-		
-	#Ignore time travel moves when behind on timelines
-	
-		when a player is behind on timelines, their timetravel moves can be largely ignored 
-		
-	#Ignore pawn moves away from king
-	
-    #Ignore sacrifical squares
-	
-		moving a pieces to an empty square that is being attacked by an enemy piece is usually bad
-		
-	#Reject time travel moves below a certain threshold
-	
-		time traveling is only good if the move is VERY good, 
-		
-		so time travel moves should be largely ignored unless they look exceptionally good
-		
-		(or if they are the only choice left)
-		
-	#Add some "parameters" to these "hand-tuned" systems that can be adjusted
-	
-		for example, having a score treshold for what states are considered can be a parameter that the genetic algorithm can optimize
-		
-		Some more examples of adjustable parameters:
-		
-		#1 "which pieces are considered at"
-		
-		#2 "how far away pawns are from king to be ignored"
-		
-		#3 how good of a score a board must look for time travel to be ignored
-		
-		#4 at certain depths should certain attributes be ignored
+* Ignoring combinatoric time travel moves 
 
-"total moves" (white - black)
+	while sometimes doing 2 time travel moves in a row is good - most of the time it isnt interesting	
+	
+	so all combinatoric moves can be ignored for now
+	
+* Ignore time travel moves when behind on timelines
 
-Score for each pieces
+	when a player is behind on timelines, their timetravel moves can be largely ignored 
+	
+* Ignore pawn moves away from king
+
+* Ignore sacrifical squares
+
+	moving a pieces to an empty square that is being attacked by an enemy piece is usually bad
+	
+* Reject time travel moves below a certain threshold
+
+	time traveling is only good if the move is VERY good, 
+	
+	so time travel moves should be largely ignored unless they look exceptionally good
+	
+	(or if they are the only choice left)
+	
+* Add some "parameters" to these "hand-tuned" systems that can be adjusted
+
+	for example, having a score treshold for what states are considered can be a parameter that the genetic algorithm can optimize
+	
+	Some more examples of adjustable parameters:
+	
+	#1 "which pieces are considered at"
+	
+	#2 "how far away pawns are from king to be ignored"
+	
+	#3 how good of a score a board must look for time travel to be ignored
+	
+	#4 at certain depths should certain attributes be ignored
+
