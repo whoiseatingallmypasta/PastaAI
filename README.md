@@ -73,27 +73,23 @@ we can come up with a rule-of-thumb for what moves are worth considering. Some e
 
 * Ignore sacrifical squares
 
-	moving a pieces to an empty square that is being attacked by an enemy piece is usually bad
+	* moving a pieces to an empty square that is being attacked by an enemy piece is usually bad
 	
 * Reject time travel moves below a certain threshold
 
-	time traveling is only good if the move is VERY good, 
-	
-	so time travel moves should be largely ignored unless they look exceptionally good
-	
-	(or if they are the only choice left)
+	* time traveling is only good if the move is VERY good, so time travel moves should be largely ignored unless they look exceptionally good (or if they are the only choice left)
 	
 * Add some "parameters" to these "hand-tuned" systems that can be adjusted
 
-	for example, having a score treshold for what states are considered can be a parameter that the genetic algorithm can optimize
+Not only can the scoring systems have tunable parameters, but the actual AI's consideration of board states can also be tunable.
 	
 	Some more examples of adjustable parameters:
 	
-	#1 "which pieces are considered at"
+	*  "which pieces are considered at"
 	
-	#2 "how far away pawns are from king to be ignored"
+	*  "how far away pawns are from king for the move be ignored"
 	
-	#3 how good of a score a board must look for time travel to be ignored
+	*  how good of a score a board must look for time travel to be ignored
 	
-	#4 at certain depths should certain attributes be ignored
+	*  at certain depths should certain attributes be ignored
 
