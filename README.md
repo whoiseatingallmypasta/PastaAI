@@ -22,8 +22,8 @@ that finds is based on the "difference in total number of moves of white vs blac
 * Need to reduce the number of moves that are considered, particularly for combinatoric board states
 
 
-#1 Algorithmic Ideas 
-#2 "Implement many different scoring systems"
+# Algorithmic Ideas 
+## 1. "Implement many different tunable scoring systems"
 
 We will add a number of different functions that assign a score to the board state
 Each function will have variables that are "tunable" and we will potentially tweak
@@ -32,17 +32,17 @@ the values of each of these variables to "tune" the AI
 (Potentially we can run a number of these in parallel and have them "fight" eachother,
  to decide the better tuning parameters)
 
-	#List of heuristic Scores to code:
+	* List of heuristic Scores to code:
 	
-		#1 "total move difference"
+		** "total move difference"
 		
-		#2 score for knights 2 away from king
+		** score for knights 2 away from king
 		
-		#3 knights 1 away from king
+		** knights 1 away from king
 		
-		#4 bishops on an open diagonal
+		** bishops on an open diagonal
 		
-		#5 enemy has an exposed triagonal to king 
+		** enemy has an exposed triagonal to king 
 		
 			#(multiplier for how many turns this is true)
 			
