@@ -11,19 +11,19 @@ that finds is based on the "difference in total number of moves of white vs blac
 
 # To-do list
 
-* Need to fix bug associated with checks that occur in depth
+* AI vs RandomAI
 
-* Need to do depth2 search for multiple boards
+* Ensure lateral moves work correctly
 
-* Need to extend this past depth2
+* Need more tunable scoring systems for each board state
 
-* Need to generalize the "score" for each board state
+* Need to add at least one more layer of depth
 
-* Need to reduce the number of moves that are considered, particularly for combinatoric board states
+* Incorporation of null moves
 
 
 # Algorithmic Ideas 
-## 1. "Hand tuning of what board states are considered"
+## 1. Tuning which types of moves are ignored and when (before search)
 
 The main issue of developing an AI for 5D chess is that the total number of moves available in a single turn can be very large. For example, if there are two "lateral boards" available on a single turn. If pieces can travel back in time on each board, the total amount of distinct moves includes the "combinatorics" of each individual move. If you send a knight back in time on the first board, it creates new boards which the second board can interact with. So generating the entire set of possible moves quickly becomes exponentially complicated as the number of parallel boards increases. 
 
@@ -65,7 +65,7 @@ Some more examples of adjustable parameters:
 *  at certain depths should certain attributes be ignored
 
 
-## 2. "Implement many different tunable scoring systems"
+## 2. Implement many different tunable scoring systems
 
 We will add a number of different functions that assign a score to the board state
 Each function will have variables that are "tunable" and we will potentially tweak
